@@ -45,22 +45,21 @@ const ProductList = () => {
         return () => {
             tg.offEvent('mainButtonClicked', onSendData)
         }
-
     }, [onSendData])
-
 
     const onAdd = (product) => {
         const alreadyAdded = addedItems.find(item => item.id === product.id);
-        let newItems =[];
+        let newItems = [];
 
-        if(alreadyAdded){
+        if(alreadyAdded) {
             newItems = addedItems.filter(item => item.id !== product.id);
         } else {
             newItems = [...addedItems, product];
         }
+
         setAddedItems(newItems)
 
-        if(newItems.length === 0){
+        if(newItems.length === 0) {
             tg.MainButton.hide();
         } else {
             tg.MainButton.show();
