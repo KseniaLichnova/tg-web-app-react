@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 import './Form.css';
 const Form = () => {
-    const [country, setCountry] =useState('');
-    const [street, setStreet] =useState('');
-    const [subject, setSubject] =useState('physical');
+    const [country, setCountry] = useState('');
+    const [street, setStreet] = useState('');
+    const [subject, setSubject] = useState('physical');
 
     const onChangeCountry = (e) => {
         setCountry(e.target.value)
     }
 
     const onChangeStreet = (e) => {
-        setCountry(e.target.value)
+        setStreet(e.target.value)
     }
 
     const onChangeSubject = (e) => {
