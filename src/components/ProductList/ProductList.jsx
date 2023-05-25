@@ -30,7 +30,7 @@ const ProductList = () => {
             queryId,
 
         }
-        fetch('http://localhost:8000', {
+        fetch('http://localhost:8000/wed-data', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
