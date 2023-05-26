@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from "../Button/Button";
 import './ProductItem.css'
-import bighit from "../ProductItem/bighit.png";
 
 const ProductItem = ({product, className, onAdd}) => {
     const onAddHandler = () => {
